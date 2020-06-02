@@ -15,7 +15,7 @@
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Pediatric_Qualification_Package_CYP2C8_Ontogeny/master/Input/PK-Parameters.csv",
+            "Path": "PK-Parameters.csv",
             "Type": "PKRatio"
         }
     ],

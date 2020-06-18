@@ -7,8 +7,9 @@ tic
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner9.0.79';
+qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner9.0.91';
 markdownJoinerFolder = 'C:\OSPQualification\Markdownjoiner1.2.0.8';
+PKSimPortableFolder = 'C:\OSPQualification\PK-Sim9.0.170';
 
 % --------------------------------------------------------------
 % replace basisDir and qualificationPlanName with your paths
@@ -42,7 +43,7 @@ ReportOutput_path=fullfile(basisDir,'report');
 
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
-startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path);
+startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder ]);
 
 % --------------------------------------------------------------
 % STEP #2: start reporting engine

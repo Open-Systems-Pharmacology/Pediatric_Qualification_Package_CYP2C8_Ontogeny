@@ -24,10 +24,9 @@ The CYP2C8 ontogeny function is reported by Upreti et al. [[3](#reference)] and 
 
 ### Qualification of **CYP2C8 enzyme ontogeny**
 
-To qualify the OSP suite for the pediatric translation of the pharmacokinetics of new drugs that are metabolized by CYP2C8, the following set of probe substances was included:
+To qualify the OSP suite for the pediatric translation of the pharmacokinetics of new drugs that are metabolized by CYP2C8, the following probe substance was included:
 
-- Montelukast [[4](#reference)]
-- Paclitaxel [[5](#reference)]
+- Montelukast [[5](#reference)]
 
 ### References
 
@@ -40,6 +39,4 @@ To qualify the OSP suite for the pediatric translation of the pharmacokinetics o
 [4]  [OSPSuite.Documentation/PK-Sim Ontogeny Database Version 7.3.pdf ](https://github.com/Open-Systems-Pharmacology/OSPSuite.Documentation/blob/38cf71b384cfc25cfa0ce4d2f3addfd32757e13b/PK-Sim%20Ontogeny%20Database%20Version%207.3.pdf)
 
 [5] [Montelukast-Model, Whole-body PBPK model of Montelukast. https://github.com/Open-Systems-Pharmacology/Montelukast-Model](https://github.com/incei/Montelukast-Model)
-
-[6] [Paclitaxel-Model, Whole-body PBPK model of Paclitaxel. https://github.com/Open-Systems-Pharmacology/Paclitaxel-Model](https://github.com/incei/Paclitaxel-Model)
 

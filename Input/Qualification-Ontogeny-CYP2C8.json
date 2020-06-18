@@ -5,11 +5,6 @@
             "Id": "Montelukast",
             "Path": "https://github.com/Open-Systems-Pharmacology/Montelukast-Model/releases/download/v1.1/Montelukast.json",
             "BuildingBlocks": []
-        },
-        {
-            "Id": "Paclitaxel",
-            "Path": "https://github.com/Open-Systems-Pharmacology/Paclitaxel-Model/releases/download/v1.1/Paclitaxel.json",
-            "BuildingBlocks": []
         }
     ],
     "ObservedDataSets": [
@@ -136,7 +131,7 @@
         },
         "PKRatioPlots": [
             {
-                "Title": "Overall predictivity of the PBPK models. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of all drugs in children 1 month to 11.9 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
+                "Title": "Overall predictivity of the montelukast PBPK model as an in vivo marker of CYP2C8 mediated clearance. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of in children 1 month to 11.9 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
                 "PKParameter": "AUC",
                 "SectionId": 3,
                 "Groups": [
@@ -145,76 +140,6 @@
                         "Caption": "All compounds",
                         "Symbol": "Circle",
                         "PKRatios": [
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 240 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5429
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 290 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5430
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 350 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5431
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 250 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5424
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 300 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5425
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 360 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5426
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 400 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5427
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 430 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5311
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 500 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5428
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sonnichsen 1994 median",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5312
-                            },
                             {
                                 "Project": "Montelukast",
                                 "Simulation": "Kearns 2008 1mgkg PO Singular oral mini granules 1m",
@@ -606,90 +531,6 @@
                                 "Output": "Organism|PeripheralVenousBlood|Montelukast|Plasma (Peripheral Venous Blood)",
                                 "ObservedData": "PK-Parameter",
                                 "ObservedDataRecordId": 5409
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "Title": "Overall predictivity of the paclitaxel PBPK model. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of paclitaxel in children 9 years to 11.7 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "AUC",
-                "SectionId": 33,
-                "Groups": [
-                    {
-                        "Color": "#000000",
-                        "Caption": "All compounds",
-                        "Symbol": "Circle",
-                        "PKRatios": [
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 240 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5429
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 290 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5430
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Doz 2001 350 mg/m2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5431
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 250 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5424
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 300 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5425
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 360 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5426
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 400 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5427
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 430 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5311
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Horton 2008 500 mgm2",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5428
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sonnichsen 1994 median",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "PK-Parameter",
-                                "ObservedDataRecordId": 5312
                             }
                         ]
                     }
@@ -1374,214 +1215,6 @@
                         ]
                     }
                 ]
-            },
-            {
-                "SectionId": 44,
-                "Title": "Goodness-of-fit visual diagnostic plots for paclitaxel PBPK model performance: observed versus individually predicted plasma concentration versus time of all adult data.",
-                "PlotType": "predictedVsObserved",
-                "Groups": [
-                    {
-                        "Caption": "Paclitaxel iv",
-                        "Symbol": "Circle",
-                        "OutputMappings": [
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Diamond2015_80mg_m2_1h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#128_Diamond-2015_Fig.2A_80mgm2_1h",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_135mg_m2_24h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_135mg_m2_24h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_135mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_135mg_m2_3h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_175mg_m2_24h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4 2_175mg_m2_24h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_175mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_175mg_m2_3h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1995_250mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#101_Huizing-1995_Fig.2_250mg_m2_3h",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_135mg_m2_180min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_135_180min",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_135mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_135_30min",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_200mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_200",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_300mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_300",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_375mg_m2_30min (for reporting)",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_375 (for reporting)",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sparreboom2005_ABI_260",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Whole Blood (Peripheral Venous Blood)",
-                                "ObservedData": "#26_Sparreboom-2005_Fig.3B_ABI_260mg_m2",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sparreboom2005_Taxol_175",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Whole Blood (Peripheral Venous Blood)",
-                                "ObservedData": "#26_Sparreboom-2005_Fig.3B_Taxol_175mg_m2",
-                                "Color": "#FF0000"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "SectionId": 44,
-                "Title": "Goodness-of-fit visual diagnostic plots for paclitaxel PBPK model performance: weighted residuals versus time of all adult data.",
-                "PlotType": "residualsOverTime",
-                "Groups": [
-                    {
-                        "Caption": "Paclitaxel iv",
-                        "Symbol": "Circle",
-                        "OutputMappings": [
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Diamond2015_80mg_m2_1h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#128_Diamond-2015_Fig.2A_80mgm2_1h",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_135mg_m2_24h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_135mg_m2_24h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_135mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_135mg_m2_3h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_175mg_m2_24h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4 2_175mg_m2_24h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1993_175mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#102_Huizing-1993_Fig.4_175mg_m2_3h.",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Huizing1995_250mg_m2_3h",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#101_Huizing-1995_Fig.2_250mg_m2_3h",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_135mg_m2_180min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_135_180min",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_135mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_135_30min",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_200mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_200",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_300mg_m2_30min",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_300",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Ibrahim2002_375mg_m2_30min (for reporting)",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Plasma (Peripheral Venous Blood)",
-                                "ObservedData": "#98_Ibrahim-2002_Fig.1_375 (for reporting)",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sparreboom2005_ABI_260",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Whole Blood (Peripheral Venous Blood)",
-                                "ObservedData": "#26_Sparreboom-2005_Fig.3B_ABI_260mg_m2",
-                                "Color": "#FF0000"
-                            },
-                            {
-                                "Project": "Paclitaxel",
-                                "Simulation": "Sparreboom2005_Taxol_175",
-                                "Output": "Organism|PeripheralVenousBlood|Paclitaxel|Whole Blood (Peripheral Venous Blood)",
-                                "ObservedData": "#26_Sparreboom-2005_Fig.3B_Taxol_175mg_m2",
-                                "Color": "#FF0000"
-                            }
-                        ]
-                    }
-                ]
             }
         ],
         "AllPlots": [
@@ -1649,86 +1282,6 @@
                 "Project": "Montelukast",
                 "Simulation": "Friesen 2004 10mg PO Singular oral mini granules",
                 "SectionId": 32
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Diamond2015_80mg_m2_1h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Huizing1993_135mg_m2_24h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Huizing1993_135mg_m2_3h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Huizing1993_175mg_m2_24h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Huizing1993_175mg_m2_3h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Huizing1995_250mg_m2_3h",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Ibrahim2002_135mg_m2_180min",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Ibrahim2002_135mg_m2_30min",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Ibrahim2002_200mg_m2_30min",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Ibrahim2002_300mg_m2_30min",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Ibrahim2002_375mg_m2_30min (for reporting)",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Sparreboom2005_ABI_260",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Sparreboom2005_Taxol_175",
-                "SectionId": 45
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Doz 2001",
-                "SectionId": 34
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Horton 2008",
-                "SectionId": 34
-            },
-            {
-                "Project": "Paclitaxel",
-                "Simulation": "Sonnichsen 1994",
-                "SectionId": 34
             }
         ]
     },
@@ -1752,16 +1305,6 @@
                     "Id": 32,
                     "Content": "Content/Concentration_time_profiles_children.md",
                     "Title": "Chapter 2.2: Montelukast Concentration-Time profiles in Children"
-                },
-                {
-                    "Id": 33,
-                    "Content": "Content/Paclitaxel_children.md",
-                    "Title": "Chapter 2.3: Paclitaxel PK Ratio tables and Figures"
-                },
-                {
-                    "Id": 34,
-                    "Content": "Content/Concentration_time_profiles_children.md",
-                    "Title": "Chapter 2.4: Paclitaxel Concentration-Time profiles in Children"
                 }
             ]
         },
@@ -1784,21 +1327,6 @@
                     "Id": 42,
                     "Content": "Content/Concentration_time_profiles_adults.md",
                     "Title": "Chapter 3.3: Montelukast Concentration-Time profiles in Adults"
-                },
-                {
-                    "Id": 43,
-                    "Content": "Content/Paclitaxel_adults.md",
-                    "Title": "Chapter 3.4: Paclitaxel Input Tables"
-                },
-                {
-                    "Id": 44,
-                    "Content": "Content/Paclitaxel_diagnostics.md",
-                    "Title": "Chapter 3.5: Paclitaxel Diagnostics Plots"
-                },
-                {
-                    "Id": 45,
-                    "Content": "Content/Concentration_time_profiles_adults.md",
-                    "Title": "Chapter 3.6: Paclitaxel Concentration-Time profiles in Adults"
                 }
             ]
         }
@@ -1809,12 +1337,6 @@
             "Name": "Montelukast",
             "Type": "Compound",
             "SectionId": 40
-        },
-        {
-            "Project": "Paclitaxel",
-            "Name": "Paclitaxel",
-            "Type": "Compound",
-            "SectionId": 43
         }
     ]
 }

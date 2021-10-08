@@ -1288,45 +1288,45 @@
     "Sections": [
         {
             "Id": 2,
-            "Title": "Chapter 1: Introduction to Pediatric Translation",
+            "Title": "1 Introduction to Pediatric Translation",
             "Content": "Content/Section1.md"
         },
         {
             "Id": 3,
-            "Title": "Chapter 2: Pediatric translation qualification",
+            "Title": "2 Pediatric translation qualification",
             "Content": "Content/Section3.md",
             "Sections": [
                 {
                     "Id": 31,
                     "Content": "Content/Montelukast_children.md",
-                    "Title": "Chapter 2.1: Montelukast PK Ratio tables and Figures"
+                    "Title": "2.1 Montelukast PK Ratio tables and Figures"
                 },
                 {
                     "Id": 32,
                     "Content": "Content/Concentration_time_profiles_children.md",
-                    "Title": "Chapter 2.2: Montelukast Concentration-Time profiles in Children"
+                    "Title": "2.2 Montelukast Concentration-Time profiles in Children"
                 }
             ]
         },
         {
             "Id": 4,
-            "Title": "Chapter 3: Adult PBPK model performance",
+            "Title": "3 Adult PBPK model performance",
             "Content": "Content/Section2.md",
             "Sections": [
                 {
                     "Id": 40,
                     "Content": "Content/Montelukast_adults.md",
-                    "Title": "Chapter 3.1: Montelukast Input Tables"
+                    "Title": "3.1 Montelukast Input Tables"
                 },
                 {
                     "Id": 41,
                     "Content": "Content/Montelukast_diagnostics.md",
-                    "Title": "Chapter 3.2: Montelukast Diagnostics Plots"
+                    "Title": "3.2 Montelukast Diagnostics Plots"
                 },
                 {
                     "Id": 42,
                     "Content": "Content/Concentration_time_profiles_adults.md",
-                    "Title": "Chapter 3.3: Montelukast Concentration-Time profiles in Adults"
+                    "Title": "3.3 Montelukast Concentration-Time profiles in Adults"
                 }
             ]
         }

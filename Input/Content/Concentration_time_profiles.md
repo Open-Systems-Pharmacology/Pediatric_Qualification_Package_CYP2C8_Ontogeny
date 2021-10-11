@@ -1,2 +1,0 @@
-#### Concentration-Time Profiles
-

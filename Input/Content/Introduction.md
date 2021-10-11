@@ -26,4 +26,4 @@ The CYP2C8 ontogeny function is reported by Upreti et al. [[Upreti 2015](#3-refe
 
 To qualify the OSP suite for the pediatric translation of the pharmacokinetics of new drugs that are metabolized by CYP2C8, the following probe substance was included:
 
-- Montelukast [[Montelukst-Model](#3-references)]
+- Montelukast [[Montelukast-Model](#3-references)]

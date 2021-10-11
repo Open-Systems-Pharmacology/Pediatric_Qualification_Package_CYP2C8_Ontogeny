@@ -5,11 +5,16 @@
 close all
 tic
 
+%if exist(fullfile(cd,'re_input'),'dir')>0 rmdir(fullfile(cd,'re_input'),'s'); end
+%if exist(fullfile(cd,'re_output'),'dir')>0 rmdir(fullfile(cd,'re_output'),'s'); end
+%if exist(fullfile(cd,'report'),'dir')>0 rmdir(fullfile(cd,'report'),'s'); end
+
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner9.0.91';
-markdownJoinerFolder = 'C:\OSPQualification\Markdownjoiner1.2.0.8';
-PKSimPortableFolder = 'C:\OSPQualification\PK-Sim9.0.170';
+qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner10.0.58';
+markdownJoinerFolder = 'C:\OSPQualification\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\OSPQualification\PK-Sim10.0.254';
+
 
 % --------------------------------------------------------------
 % replace basisDir and qualificationPlanName with your paths
@@ -23,7 +28,7 @@ PKSimPortableFolder = 'C:\OSPQualification\PK-Sim9.0.170';
 %   - report
 %
 
-basisDir = 'C:\Projects\Pediatric_Qualification_Package_CYP2C8_Ontogeny\';
+basisDir = fullfile(cd);
 qualificationPlanName = 'Qualification-Ontogeny-CYP2C8.json';
 
 % In case your folder structure is different from assumed above, 
@@ -43,7 +48,7 @@ ReportOutput_path=fullfile(basisDir,'report');
 
 % --------------------------------------------------------------
 % STEP #1: start qualification runner to generate inputs for the reporting engine
-startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder ]);
+startQualificationRunner(qualificationRunnerFolder, qualificationPlan, REInput_path, ['-p ' PKSimPortableFolder ' --logLevel Debug']);
 
 % --------------------------------------------------------------
 % STEP #2: start reporting engine
@@ -53,7 +58,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 
 %OPTIONAL: set watermark. If set, it will appear in all generated plots
 %WSettings.Watermark = 'Preliminary';
-
+    
 % run the Worklfow tasklist of ConfigurationPlan
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets);
 

@@ -11,9 +11,9 @@ tic
 
 % --------------------------------------------------------------
 % replace qualificationRunnerFolder and markdownJoinerFolder with your paths
-qualificationRunnerFolder = 'C:\OSPQualification\QualificationRunner10.0.58';
-markdownJoinerFolder = 'C:\OSPQualification\markdown-joiner_1.2.0.8';
-PKSimPortableFolder = 'C:\OSPQualification\PK-Sim10.0.254';
+qualificationRunnerFolder = 'C:\Software\QualificationRunner_11.0.9999';
+markdownJoinerFolder = 'C:\Software\markdown-joiner_1.2.0.8';
+PKSimPortableFolder = 'C:\Software\PK-Sim_11.0.9999';
 
 
 % --------------------------------------------------------------
@@ -57,7 +57,7 @@ reportConfigurationPlan = 'report-configuration-plan.json';
 [WSettings, ConfigurationPlan, TaskList, ObservedDataSets] = initializeQualificationWorkflow(reportConfigurationPlan, REInput_path, REOutput_path);
 
 %OPTIONAL: set watermark. If set, it will appear in all generated plots
-%WSettings.Watermark = 'Preliminary';
+WSettings.Watermark = '';
     
 % run the Worklfow tasklist of ConfigurationPlan
 runQualificationWorkflow(WSettings, ConfigurationPlan, TaskList, ObservedDataSets);

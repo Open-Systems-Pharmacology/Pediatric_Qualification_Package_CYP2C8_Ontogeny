@@ -9,4 +9,4 @@ jobs:
   markdown-link-check:
     uses: Open-Systems-Pharmacology/Workflows/.github/workflows/MarkdownLinksCheck.yml@main
     with:
-      folder-path: 'Qualification/report'
+      folder-path: 'report'

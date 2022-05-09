@@ -7,7 +7,7 @@ In this repository the electronic package for qualification of CYP2C8 ontogeny u
 
 For the Qualification of the CYP2C8 mediated elimination of compounds, the following probe substance was included:
 
-- Montelukast [[1](#reference)]
+- Montelukast [[1](#references)]
 
 
 Necessary software to execute the qualification workflow (see http://setup.open-systems-pharmacology.org for download links and instructions):

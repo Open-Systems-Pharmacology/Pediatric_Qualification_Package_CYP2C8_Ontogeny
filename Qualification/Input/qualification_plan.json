@@ -1,9 +1,9 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v2.3/schemas/OSP_Qualification_Plan_Schema.json",
+    "$schema": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/QualificationPlan/v3.3/schemas/OSP_Qualification_Plan_Schema.json",
     "Projects": [
         {
             "Id": "Montelukast",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Montelukast-Model/v1.2/Montelukast.json",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Montelukast-Model/v2.0/Montelukast.json",
             "BuildingBlocks": []
         },
         {
@@ -21,7 +21,7 @@
     "ObservedDataSets": [
         {
             "Id": "PK-Parameter",
-            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.4/Pediatrics.csv",
+            "Path": "https://raw.githubusercontent.com/Open-Systems-Pharmacology/Database-for-observed-data/v1.7/Pediatrics.csv",
             "Type": "PKRatio"
         }
     ],
@@ -143,13 +143,13 @@
         "PKRatioPlots": [
             {
                 "Title": "Overall predictivity of the montelukast PBPK model as an in vivo marker of CYP2C8 mediated clearance. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of in children 1 month to 11.9 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "AUC",
-                "SectionId": 3,
+                "PKParameters": ["AUC"],
+                "SectionReference": "pediatric-translation-qualification",
                 "Groups": [
                     {
                         "Color": "#000000",
                         "Caption": "All compounds",
-                        "Symbol": "Circle",
+                        "Symbol": "CircleOpen",
                         "PKRatios": [
                             {
                                 "Project": "Montelukast-Pediatrics",
@@ -549,13 +549,13 @@
             },
             {
                 "Title": "Overall predictivity of the montelukast PBPK model. Open circles represent mean ratios of PBPK predicted AUC over observed AUC of montelukast in children 1 month to 11.9 years old. Blue dashed lines and red dotted lines represent the 1.5-fold and 2-fold error, respectively.",
-                "PKParameter": "AUC",
-                "SectionId": 31,
+                "PKParameters": ["AUC"],
+                "SectionReference": "montelukast-pk-ratios",
                 "Groups": [
                     {
                         "Color": "#000000",
                         "Caption": "Montelukast iv",
-                        "Symbol": "Circle",
+                        "Symbol": "CircleOpen",
                         "PKRatios": [
                             {
                                 "Project": "Montelukast-Pediatrics",
@@ -959,36 +959,36 @@
             {
                 "Project": "Montelukast-Pediatrics",
                 "Simulation": "Friesen 2004 10mg PO Singular oral mini granules",
-                "SectionId": 32
+                "SectionReference": "montelukast-ct-profiles-in-children"
             }
         ]
     },
     "Sections": [
         {
-            "Id": 2,
-            "Title": "1 Introduction to Pediatric Translation",
+            "Reference": "introduction",
+            "Title": "Introduction to Pediatric Translation",
             "Content": "Content/Introduction.md"
         },
         {
-            "Id": 3,
-            "Title": "2 Pediatric translation qualification",
+            "Reference": "pediatric-translation-qualification",
+            "Title": "Pediatric translation qualification",
             "Content": "Content/Translation.md",
             "Sections": [
                 {
-                    "Id": 31,
+                    "Reference": "montelukast-pk-ratios",
                     "Content": "Content/Montelukast_children.md",
-                    "Title": "2.1 Montelukast PK Ratio tables and Figures"
+                    "Title": "Montelukast PK Ratio tables and Figures"
                 },
                 {
-                    "Id": 32,
+                    "Reference": "montelukast-ct-profiles-in-children",
                     "Content": "Content/Concentration_time_profiles_children.md",
-                    "Title": "2.2 Montelukast Concentration-Time profiles in Children"
+                    "Title": "Montelukast Concentration-Time profiles in Children"
                 }
             ]
         },
         {
-            "Id": 5,
-            "Title": "3 References",
+            "Reference": "main-references",
+            "Title": "References",
             "Content": "Content/References.md",
             "Sections": []
         }

@@ -1,0 +1,13 @@
+name: Check Latest Model Releases in a Qualification Plan
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches-ignore:
+      - master
+      - main
+
+jobs:
+  check-latest-releases:
+    uses: Open-Systems-Pharmacology/Workflows/.github/workflows/QualificationPlan_ModelVersionCheck.yml@main
